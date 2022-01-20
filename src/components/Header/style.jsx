@@ -4,6 +4,7 @@ const SFromHeader = styled.header`
   height: 132px;
   width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.103);
+  background-color: white;
   a:nth-child(1) {
     padding-left: 8px;
     padding-top: 4px;
