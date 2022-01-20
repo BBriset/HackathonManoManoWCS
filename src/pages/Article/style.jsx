@@ -9,16 +9,6 @@ const Globale = styled.div`
     height: 35px;
     width: 35px;
   }
-  div {
-    @media (max-width: 1020px) {
-      width: 772px;
-      display: flex;
-      justify-content: center;
-      margin-right: auto;
-      margin-left: auto;
-      background-color: white;
-    }
-  }
   img {
     width: 375px;
     height: 300px;
