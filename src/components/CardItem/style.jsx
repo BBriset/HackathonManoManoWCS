@@ -17,6 +17,9 @@ const Card = styled.div`
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
   }
+  @media (max-width: 1013px) {
+    min-height: 290px;
+  }
 `;
 const Div = styled.div`
   height: 36px;
