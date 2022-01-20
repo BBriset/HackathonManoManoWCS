@@ -5,7 +5,6 @@ const Container = styled.div`
   display: flex;
   margin: auto;
   flex-direction: column;
-
   img {
     display: flex;
     margin: auto;
@@ -24,6 +23,7 @@ const Section = styled.section`
 
 const Row = styled.section`
   height: 56px;
+  margin-bottom: 16px;
   div:nth-child(1) {
     height: 28px;
     margin: 0;
