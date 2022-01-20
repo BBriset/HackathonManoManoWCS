@@ -23,6 +23,7 @@ const Div = styled.div`
   display: flex;
   flex-direction: column;
   width: 200px;
+
   h1 {
     font-size: 14px;
     margin: 0;

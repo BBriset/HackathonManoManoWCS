@@ -12,8 +12,6 @@ const Container = styled.div`
     border-radius: 10px;
     padding-bottom: 32px;
   }
-  p {
-  }
 `;
 
 const Section = styled.section`
@@ -23,7 +21,7 @@ const Section = styled.section`
 
 const Row = styled.section`
   height: 56px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   div:nth-child(1) {
     height: 28px;
     margin: 0;
