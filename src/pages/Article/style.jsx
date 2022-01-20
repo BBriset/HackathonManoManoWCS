@@ -82,47 +82,28 @@ const AddQt = styled.div`
 `;
 const Button = styled.div`
   display: flex;
-  flex-direction:column;
-  align-items:center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   margin-top: 30px;
   margin-bottom: 30px;
 
-  button {
-    border-top: 1px solid #96d1f8;
-    background: #65a9d7;
-    );
-    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
-    background: -moz-linear-gradient(top, #3e779d, #65a9d7);
-    background: -ms-linear-gradient(top, #3e779d, #65a9d7);
-    background: -o-linear-gradient(top, #3e779d, #65a9d7);
-    padding: 11.5px 23px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-    -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-    text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
-    color: white;
-    font-size: 20px;
-    font-family: Georgia, serif;
+  .buttonLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 90vw;
+    background: #53baad;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
     text-decoration: none;
-    vertical-align: middle;
-    width:70%;
-    height:50px;
-    margin: 0.5em;
-  
-    
+    margin-bottom: 4vh;
+    color: black;
   }
-  button:hover {
-    border-top-color: #28597a;
-    background: #28597a;
-    color: #ccc;
-  }
-  button:active {
-    border-top-color: #1b435e;
-    background: #1b435e;
+  .buttonLink:hover {
+    background-color: #12ccb4;
+    transition: background-color 0.3s ease-in;
   }
 `;
 export { Star1, AddQt, Globale, Button };
