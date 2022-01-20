@@ -18,7 +18,7 @@ export default function App() {
         <Route path="/Connexion" element={<Connexion />} />
         <Route path="/Inscription" element={<Inscription />} />
       </Routes>
-      <Inscription />
+
       <Footer />
     </>
   );

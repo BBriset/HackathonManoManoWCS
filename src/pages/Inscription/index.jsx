@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SFromInscript from './style';
 
 export default function inscription() {
@@ -30,9 +31,9 @@ export default function inscription() {
         <input type="text" placeholder="Ville" />
       </div>
 
-      <button type="button" className="buttonLink">
+      <Link type="button" className="buttonLink" to="/Inscription">
         Inscription
-      </button>
+      </Link>
     </SFromInscript>
   );
 }

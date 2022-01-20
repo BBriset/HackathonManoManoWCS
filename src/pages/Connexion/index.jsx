@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SFromInscript from './style';
 
 export default function Conne() {
@@ -14,9 +15,9 @@ export default function Conne() {
 
         <input type="text" className="m-d-p" placeholder="Password" />
       </div>
-      <button type="button" className="buttonLink">
+      <Link type="button" className="buttonLink" to="/Connexion">
         Connexion
-      </button>
+      </Link>
       <div className="div3">
         <div>
           <input type="checkbox" /> Remember ME
