@@ -145,25 +145,25 @@ const Div2 = styled.div`
   flex-direction: row;
   align-self: center;
   margin-left: 65px;
-  margin-right:20px;
-  width:110px;
+  margin-right: 20px;
+  width: 110px;
   p:nth-child(1) {
     font-size: 10px;
     height: 25px;
     margin-top: 23px;
-    min-width: 35px:
+    min-width: 35px;
   }
   p {
     font-size: 18px;
     color: #0c193a;
-    margin-right:10px;
+    margin-right: 10px;
   }
   h1 {
     font-size: 10px;
     height: 25px;
     margin-top: 23px;
-    min-width: 35px:
-    margin-right:0;
+    min-width: 35px;
+    margin-right: 0;
   }
 `;
 
