@@ -1,6 +1,6 @@
-import IconCB from 'Assets/IconCB.png';
-import IconPp from 'Assets/IconPaypal.png';
-import IconCoinBase from 'Assets/IconCoinBase.png';
+import IconCB from 'assets/IconCB.png';
+import IconPp from 'assets/IconPaypal.png';
+import IconCoinBase from 'assets/Coinbase.png';
 import { SButtonCB, SButtonPaypal, SButtonCoinBase, SContainer } from './style';
 
 export default function Paiement() {
@@ -22,7 +22,10 @@ export default function Paiement() {
       </SButtonPaypal>
 
       <SButtonCoinBase>
-        <img src={IconCoinBase} alt="Logo Paypal" />
+        <a href="https://commerce.coinbase.com/checkout/fa79f7dd-cbfe-423b-bb1d-a5674546a386">
+          <img src={IconCoinBase} alt="Logo CoinBase" />
+        </a>
+        <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807" />
       </SButtonCoinBase>
     </SContainer>
   );

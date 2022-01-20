@@ -28,7 +28,7 @@ export const SButtonPaypal = styled.div`
   @media only screen and (max-width: 1000px) {
     img {
       height: 50px;
-      width: 70%;
+      width: 250px;
     }
     display: flex;
     justify-content: center;
@@ -44,8 +44,9 @@ export const SButtonPaypal = styled.div`
 export const SButtonCoinBase = styled.div`
   @media only screen and (max-width: 1000px) {
     img {
+      padding: 5px;
       height: 50px;
-      width: 20%;
+      width: 120px;
     }
     display: flex;
     justify-content: center;
