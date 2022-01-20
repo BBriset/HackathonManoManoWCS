@@ -1,7 +1,7 @@
-import React from 'react';
 import { Star1, AddQt, Globale, Button, Div, Count, Div2 } from './style';
 import tron from '../../assets/tronconneuse.jpg';
 import payer from '../../assets/payer.png';
+
 
 export default function Articles() {
   return (
