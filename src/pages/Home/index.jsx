@@ -1,4 +1,4 @@
-import { Container, Section, Row, Row2 } from './style';
+import { Container, Section, Row, Row2, Div } from './style';
 import Homes from '../../assets/home.png';
 import CardItem from '../../components/CardItem';
 
@@ -44,7 +44,9 @@ export default function Home() {
   return (
     <div>
       <Container>
-        <img src={Homes} alt="home" />
+        <Div>
+          <img src={Homes} alt="home" />
+        </Div>
         <Section>
           <Row>
             <div>Nos top ventes</div>
