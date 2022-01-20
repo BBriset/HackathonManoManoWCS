@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const SFromHeader = styled.header`
-  border: dashed red;
   height: 132px;
   width: 100%;
 
@@ -10,14 +9,12 @@ const SFromHeader = styled.header`
     width: 110px;
   }
   .first {
-    border: dashed yellow;
     height: 44px;
     display: flex;
     justify-content: space-between;
   }
   .second {
     padding-top: 0;
-    border: dashed green;
     height: 44px;
     display: flex;
     align-items: center;
@@ -32,7 +29,6 @@ const SFromHeader = styled.header`
     width: 30px;
     height: 7px;
     margin-top: 1px;
-
     border-radius: 50%;
   }
 
@@ -55,7 +51,6 @@ const SFromHeader = styled.header`
     justify-content: space-between;
     color: blue;
     width: auto;
-
     overflow-x: scroll;
   }
   li {
