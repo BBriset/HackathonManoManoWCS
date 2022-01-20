@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import { Star1, AddQt, Globale, Button } from './style';
 import tron from '../../assets/tron.png';
 
@@ -53,8 +53,12 @@ export default function Arricles() {
         </div>
       </AddQt>
       <Button>
-        <button type="button">Ajouter au panier</button>
-        <button type="button">Acheter un article</button>
+        <Link className="buttonLink" to="/cart">
+          Ajouter au panier
+        </Link>
+        <Link className="buttonLink" to="/direct">
+          Acheter un article
+        </Link>
       </Button>
     </Globale>
   );

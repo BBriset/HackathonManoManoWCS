@@ -22,6 +22,10 @@ const SCart = styled.section`
     text-decoration: none;
     margin-bottom: 4vh;
     color: black;
+    transition: background-color 0.3s ease-in;
+  }
+  .buttonLink:hover {
+    background-color: #12ccb4;
   }
   .item {
     display: flex;
