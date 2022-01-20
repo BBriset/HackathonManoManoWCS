@@ -9,6 +9,7 @@ const Footer1 = styled.div`
   @media (max-width: 1013px) {
     height: 658px;
   }
+  bottom: 0;
 `;
 
 const Main = styled.div`

@@ -15,7 +15,33 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color:#f5f6f7;
+    a {
+      text-decoration: none;
+    }
+
+  /* unvisited link */
+  a:link {
+  color: black;
   }
+
+  /* visited link */
+  a:visited {
+  color: black;
+  }
+
+  /* mouse over link */
+  a:hover {
+  color: black;
+  }
+
+  /* selected link */
+  a:active {
+  color: black;
+  } 
+  
+}
+
 `;
 
 export default GlobalStyle;
