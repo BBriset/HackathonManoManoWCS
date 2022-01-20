@@ -34,9 +34,6 @@ const Section = styled.section`
   @media (max-width: 1013px) {
     margin-left: 0;
   }
-  div:nth-child(1) {
-    margin-left: 10px;
-  }
 `;
 
 const Row = styled.section`
@@ -75,7 +72,7 @@ const Row2 = styled.div`
   overflow: hidden;
   margin-right: 10px;
   width: 1192px;
-  @media (max-width: 1013px) {
+  @media (max-width: 376px) {
     width: 375px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
