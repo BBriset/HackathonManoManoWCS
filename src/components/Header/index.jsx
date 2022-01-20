@@ -38,7 +38,6 @@ export default function Header() {
               type="button"
               value="identifiez-vous"
             />
-
             <Link to="/cart">
               <Shopping />
             </Link>
