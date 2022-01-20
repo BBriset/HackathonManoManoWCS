@@ -1,4 +1,5 @@
 import logo from 'assets/logo.png';
+import { Link } from 'react-router-dom';
 import { ShoppingCart } from '@styled-icons/material-outlined/ShoppingCart';
 import styled from 'styled-components';
 import { SFromHeader, Container } from './style';
@@ -38,7 +39,9 @@ export default function Header() {
               value="identifiez-vous"
             />
             <a href="/shop">
-              <Shopping />
+              <Link to="/cart">
+                <Shopping />
+              </Link>
             </a>
           </div>
         </div>

@@ -35,4 +35,12 @@ const Row = styled.section`
   }
 `;
 
-export { Container, Section, Row };
+const Row2 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-right: 10px;
+  width: 1192px;
+`;
+
+export { Container, Section, Row, Row2 };
