@@ -1,10 +1,8 @@
 import Paiement from '../../components/ListPaiement';
-import Header from '../../components/Header';
 
-export default function Crypto() {
+export default function ListPaiement() {
   return (
     <div>
-      <Header />
       <Paiement />
     </div>
   );
