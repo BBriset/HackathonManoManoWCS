@@ -20,11 +20,17 @@ export default function Conne() {
       </Link>
       <div className="div3">
         <div>
-          <input type="checkbox" /> Remember ME
+          <input type="checkbox" className="remember" /> Remember ME
         </div>
         <div>
           <a href="/">Forgot your password</a>
         </div>
+      </div>
+      <div>
+        <h1 className="inscription"> pas de compte ?</h1>
+        <Link type="button" className="buttonLink" to="/Inscription">
+          Inscrivez-vous
+        </Link>
       </div>
     </SFromInscript>
   );
