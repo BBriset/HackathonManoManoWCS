@@ -7,7 +7,7 @@ const SFromInscript = styled.form`
   flex-direction: column;
 
   h1 {
-    margin-top: 150px;
+    margin-top: 100px;
   }
   h2 {
     font-size: medium;
@@ -26,12 +26,12 @@ const SFromInscript = styled.form`
     height: 75%;
     border: none;
   }
-  button {
-    margin-top: 50px;
+  .buttonLink {
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 8vh;
+    height: 6vh;
     width: 90vw;
     background: #53baad;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

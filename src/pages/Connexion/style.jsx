@@ -5,9 +5,10 @@ const SFromInscript = styled.form`
   display: flex;
   align-items: center;
   flex-direction: column;
-
+    
+  }
   h1 {
-    margin-top: 150px;
+    margin-top: 50px;
   }
   h2 {
     font-size: medium;
@@ -26,7 +27,7 @@ const SFromInscript = styled.form`
     height: 75%;
     border: none;
   }
-  button {
+  .buttonLink {
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -39,6 +40,15 @@ const SFromInscript = styled.form`
     text-decoration: none;
     margin-bottom: 4vh;
     color: black;
+  }
+  .buttonLink:hover {
+    background-color: #12ccb4;
+  }
+  .inscription {
+    margin-top:50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
