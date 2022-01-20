@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const SFromHeader = styled.header`
   height: 132px;
   width: 100%;
+  z-index: 2;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.103);
   background-color: white;
   a:nth-child(1) {
@@ -39,6 +40,9 @@ const SFromHeader = styled.header`
     margin-top: 3px;
     margin-left: 10px;
     margin-right: 0px;
+    @media (max-width: 376px) {
+      margin-right: 10px;
+    }
   }
 
   .first input {
@@ -76,7 +80,11 @@ const SFromHeader = styled.header`
       background-color: white;
       cursor: pointer;
     }
+    @media (max-width: 376px) {
+      width: 91%;
+    }
   }
+
   .third {
     margin-right: 20px;
     list-style-type: none;
