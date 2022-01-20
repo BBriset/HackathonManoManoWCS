@@ -5,15 +5,12 @@ const Container = styled.div`
   display: flex;
   margin: auto;
   flex-direction: column;
-
   img {
     display: flex;
     margin: auto;
     margin-top: 20px;
     border-radius: 10px;
     padding-bottom: 32px;
-  }
-  p {
   }
 `;
 
@@ -24,6 +21,7 @@ const Section = styled.section`
 
 const Row = styled.section`
   height: 56px;
+  margin-bottom: 10px;
   div:nth-child(1) {
     height: 28px;
     margin: 0;
