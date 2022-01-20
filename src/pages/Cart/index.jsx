@@ -32,71 +32,78 @@ export default function Cart() {
 
   return (
     <SCart>
-      <TabContext value={value}>
-        <Box>
-          <div>
-            <Link className="link" to="/">
-              <BlackAl />
-              Continuer mes achats
-            </Link>
-            <Tabs
-              variant="fullWidth"
-              onChange={handleChange}
-              aria-label="CartChoise"
-              textColor="black"
-              centered
-              TabIndicatorProps={{
-                style: {
-                  height: '5px',
-                  backgroundColor: 'black',
-                },
-              }}
-            >
-              <Tab label="Panier" value="1" />
-              <Tab label="Mis de côté" value="2" />
-            </Tabs>
-          </div>
-        </Box>
-        <TabPanel value="1">
-          <h2>Total {total} €</h2>
-          <article className="item">
-            <img src={tronconneuse} alt="meuble tv" />
-            <div className="description">
-              <p className="itemDetails">
-                Tronçonneuse thermique 62 cm3, guide 50 cm, 2 chaines + housse
-                de transport
-              </p>
-              {price1}€
+      <Link className="link" to="/">
+        <BlackAl />
+        Continuer mes achats
+      </Link>
+      <div className="context">
+        <div className="mainCard">
+          <TabContext value={value}>
+            <Box>
+              <div>
+                <Tabs
+                  variant="fullWidth"
+                  onChange={handleChange}
+                  aria-label="CartChoise"
+                  textColor="black"
+                  centered
+                  TabIndicatorProps={{
+                    style: {
+                      height: '5px',
+                      backgroundColor: 'black',
+                    },
+                  }}
+                >
+                  <Tab label="Panier" value="1" />
+                  <Tab label="Mis de côté" value="2" />
+                </Tabs>
+              </div>
+            </Box>
+            <div className="panel">
+              <TabPanel value="1">
+                <h2>Total du panier {total} €</h2>
+                <article className="item">
+                  <img src={tronconneuse} alt="meuble tv" />
+                  <div className="description">
+                    <p className="itemDetails">
+                      Tronçonneuse thermique 62 cm3, guide 50 cm, 2 chaines +
+                      housse de transport
+                    </p>
+                    {price1}€
+                  </div>
+                </article>
+                <article className="item">
+                  <img src={tv} alt="meuble tv" />
+                  <div className="description">
+                    <p className="itemDetails">
+                      Selsey BIANKO - Meuble TV / Banc TV (chêne lancaster, 140
+                      cm, sans LED)
+                    </p>
+                    {price2} €
+                  </div>
+                </article>
+              </TabPanel>
+              <TabPanel value="2">
+                <h1>Ça alors. Vous n’avez rien mis de côté.</h1>
+                <p>On a vérifié partout.</p>
+                <img src={monPanier} alt="Mon panier" />
+              </TabPanel>
             </div>
-          </article>
-          <article className="item">
-            <img src={tv} alt="meuble tv" />
-            <div className="description">
-              <p className="itemDetails">
-                Selsey BIANKO - Meuble TV / Banc TV (chêne lancaster, 140 cm,
-                sans LED)
-              </p>
-              {price2} €
-            </div>
-          </article>
-          <h2>Total {total} €</h2>
+          </TabContext>
+        </div>
+        <div className="total">
+          <h2>Total du panier {total} €</h2>
           <Link className="buttonLink" to="/">
             Continuer mes achats
           </Link>
-          <Link className="buttonLink" to="/buy">
+          <Link className="buttonLink" to="/Form">
             Acheter ces articles
           </Link>
-          <Link className="buttonLink" to="/connexion">
+          <Link className="buttonLink" to="/Connexion">
             Connexion/Inscription
           </Link>
-        </TabPanel>
-        <TabPanel value="2">
-          <h1>Ça alors. Vous n’avez rien mis de côté.</h1>
-          <p>On a vérifié partout.</p>
-          <img src={monPanier} alt="Mon panier" />
-        </TabPanel>
-      </TabContext>
-
+        </div>
+      </div>
       <div className="reassuranceSection">
         <h2 className="reassuranceTitle">
           Le plus grand magasin en ligne d’Europe de brico, maison & jardin
