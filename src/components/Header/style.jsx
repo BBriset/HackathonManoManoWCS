@@ -55,6 +55,7 @@ const SFromHeader = styled.header`
     font-size: 15px;
     font-weight: 600;
     color: #838383;
+    margin-bottom: 10px;
     :hover {
       cursor: pointer;
       background-color: #f0f0f0;
@@ -98,7 +99,6 @@ const SFromHeader = styled.header`
   }
   li {
     margin-left: 40px;
-
     display: flex;
     cursor: pointer;
     margin-top: 20px;
@@ -122,6 +122,23 @@ const Container = styled.div`
   input:focus {
     outline: none !important;
   }
+  /* .first:nth-child(1) {
+    width: 350px;
+  } */
+`;
+const Div = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-self: center;
+  width: 300px;
+  height: 50px;
+  /* .first:nth-child(1) {
+    width: 350px;
+  } */
+  a {
+    style: none;
+  }
 `;
 
-export { SFromHeader, Container };
+export { SFromHeader, Container, Div };
