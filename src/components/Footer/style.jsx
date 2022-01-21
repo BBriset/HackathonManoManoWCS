@@ -10,6 +10,7 @@ const Footer1 = styled.div`
     height: 658px;
     bottom: 0;
   }
+
   bottom: 0;
 `;
 
