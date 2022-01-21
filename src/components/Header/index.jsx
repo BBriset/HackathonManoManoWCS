@@ -2,14 +2,15 @@ import logo from 'assets/logo.png';
 import { Link } from 'react-router-dom';
 import { ShoppingCart } from '@styled-icons/material-outlined/ShoppingCart';
 import styled from 'styled-components';
-import { SFromHeader, Container } from './style';
+import { SFromHeader, Container, Div } from './style';
 
 const Shopping = styled(ShoppingCart)`
   color: #838383;
-  height: 25px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
+  padding: 14px;
   margin-bottom: 4px;
-  margin-left: 10px;
+  margin-left: 0px;
   margin-right: 10px;
   :hover {
     cursor: pointer;
@@ -17,8 +18,8 @@ const Shopping = styled(ShoppingCart)`
     color: #1e3c87;
     border-radius: 10px;
     height: 38px;
-    padding: 6px;
-    max-width: 40px;
+    padding: 8px;
+    margin-top: 7px;
   }
 `;
 
@@ -32,16 +33,19 @@ export default function Header() {
               <img src={logo} alt="mano mano" />
             </a>
           </div>
-          <div>
-            <input
-              className="first-input"
-              type="button"
-              value="identifiez-vous"
-            />
+
+          <Div>
+            <Link to="/Connexion">
+              <input
+                className="first-input"
+                type="button"
+                value="identifiez-vous"
+              />
+            </Link>
             <Link to="/cart">
               <Shopping />
             </Link>
-          </div>
+          </Div>
         </div>
         <div>
           <div className="second">
