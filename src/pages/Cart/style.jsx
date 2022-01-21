@@ -63,12 +63,13 @@ const SCart = styled.section`
     align-items: center;
     height: 8vh;
     width: 90vw;
-    background: #53baad;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+    background: #29b9ad;
+    border-radius: 5px;
     text-decoration: none;
     margin-bottom: 4vh;
-    color: black;
+    color: #0c193a;
+    font-size: 16px;
+    font-weight: bold;
     transition: background-color 0.3s ease-in;
     @media (min-width: 1013px) {
       width: 50vh;
@@ -79,7 +80,10 @@ const SCart = styled.section`
     }
   }
   .buttonLink:hover {
-    background-color: #12ccb4;
+    background-color: #25a59a;
+  }
+  .buttonLink:active {
+    background-color: #25a59a;
   }
   .item {
     display: flex;
@@ -94,6 +98,9 @@ const SCart = styled.section`
     justify-content: space-around;
     font-weight: bold;
     font-size: 12px;
+    @media (min-width: 1013px) {
+      margin: 20vh 4vh 2vh 4vh;
+    }
     img {
       width: 33vw;
       @media (min-width: 1013px) {

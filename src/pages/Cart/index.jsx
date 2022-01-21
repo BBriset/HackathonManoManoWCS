@@ -12,7 +12,7 @@ import paint from 'assets/paint.png';
 import wall from 'assets/wall.png';
 import monPanier from 'assets/monPanier.png';
 import tronconneuse from 'assets/tronconneuse.jpg';
-import tv from 'assets/tv.jpg';
+/* import tv from 'assets/tv.jpg'; */
 import SCart from './style';
 
 export default function Cart() {
@@ -72,7 +72,7 @@ export default function Cart() {
                     {price1}€
                   </div>
                 </article>
-                <article className="item">
+                {/*  <article className="item">
                   <img src={tv} alt="meuble tv" />
                   <div className="description">
                     <p className="itemDetails">
@@ -81,7 +81,7 @@ export default function Cart() {
                     </p>
                     {price2} €
                   </div>
-                </article>
+                </article> */}
               </TabPanel>
               <TabPanel value="2">
                 <h1>Ça alors. Vous n’avez rien mis de côté.</h1>
