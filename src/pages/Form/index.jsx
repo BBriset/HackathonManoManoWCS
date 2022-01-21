@@ -1,4 +1,4 @@
-import VroumVroum from 'assets/tronconneuse.jpg';
+import VroumVroum from 'assets/tronconneuse1.jpg';
 import {
   SForm,
   STitle,
