@@ -8,6 +8,7 @@ const Footer1 = styled.div`
   margin-right: auto;
   @media (max-width: 1013px) {
     height: 658px;
+    bottom: 0;
   }
   bottom: 0;
 `;
@@ -22,6 +23,7 @@ const Main = styled.div`
   width: 1060px;
   @media (max-width: 1013px) {
     flex-direction: column;
+    width: auto;
   }
   p {
     width: 150px;

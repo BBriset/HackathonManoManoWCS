@@ -10,12 +10,13 @@ import {
   SContainer,
   Div,
   Recap,
+  Container,
 } from './style';
 
 export default function Paiement() {
   return (
     <SContainer>
-      <>
+      <Container>
         <p>Votre panier</p>
         <Recap>
           <img src={VroumVroum} alt="BrrrBrrrrbbbbbbb" />
@@ -25,7 +26,7 @@ export default function Paiement() {
           </p>
         </Recap>
         <p>Total 116€90</p>
-      </>
+      </Container>
       <Div>
         <SButtonCB>
           <img src={IconCB} alt="Logo Carte bleu" />
