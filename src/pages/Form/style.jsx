@@ -2,57 +2,89 @@ import styled from 'styled-components';
 
 export const SForm = styled.div`
   @media only screen and (max-width: 1000px) {
-    height: 300px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+export const STitle = styled.div`
+  img {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    :hover {
+      box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
     h1 {
-      font-weight: bold;
-      font-size: 14px;
+      text-align: center;
     }
-
-    h2 {
-      font-weight: bold;
-      font-size: 10px;
-    }
-    p {
-      font-size: 9px;
-    }
-    article {
-      padding: 10px;
-      display: flex;
-      justify-content: center;
-    }
-    .paymentBtn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 8vh;
-      width: 90vw;
-      background: #53baad;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 10px;
-      text-decoration: none;
-      margin-bottom: 4vh;
-      color: black;
+    img {
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+      :hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+      }
     }
   }
 `;
+export const SCoordinate = styled.div`
+  @media only screen and (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
 
-export const SLivraison = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px;
-  text-align: center;
-
-  h1 {
-    font-weight: bold;
-    font-size: 14px;
-    h2 {
-      font-weight: bold;
-      font-size: 10px;
+    hr {
+      border: 1px solid var(--color--primary);
+      width: 80vw;
+      margin-top: 50px;
     }
-    p {
-      font-size: 9px;
+    input {
+      height: 30px;
+      font-size: 16px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: solid 1px var(--color--primary);
+    }
+  }
+`;
+export const SLivraison = styled.div`
+  @media only screen and (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    hr {
+      margin-top: 50px;
+      border: 1px solid var(--color--primary);
+      width: 80vw;
+    }
+  }
+`;
+export const SButton = styled.div`
+  @media only screen and (max-width: 1000px) {
+    margin-bottom: 10px;
+
+    button {
+      border: none;
+      background-color: #29b9ad;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 5px;
+      color: #0c193a;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      vertical-align: middle;
+      width: 310px;
+      height: 48px;
+      margin: 10px 0 0 0;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #25a59a;
+    }
+    button:active {
+      background-color: #25a59a;
     }
   }
 `;
