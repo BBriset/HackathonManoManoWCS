@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Star1, AddQt, Globale, Button, Div, Count, Div2 } from './style';
 import tron from '../../assets/tronconneuse.jpg';
 import payer from '../../assets/payer.png';
@@ -56,8 +57,12 @@ export default function Articles() {
           </Div2>
         </AddQt>
         <Button>
-          <button type="button">Ajouter au panier</button>
-          <button type="button">Achat direct</button>
+          <Link to="/cart">
+            <button type="button">Ajouter au panier</button>
+          </Link>
+          <Link to="/Form">
+            <button type="button">Achat direct</button>
+          </Link>
         </Button>
         <img src={payer} alt="payer" />
       </Div>
